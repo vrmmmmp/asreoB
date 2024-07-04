@@ -1,0 +1,61 @@
+---
+interface Props {
+	message: string;
+	
+}
+
+const { message } = Astro.props;
+---
+
+    <div class="nav-links" >
+        <a class:list={['a-link',{active:message == 'index'}]} id='index' href="/">首页</a>
+        <a class:list={['a-link',{active:message == 'intro'}]} id='intro' href="/intro" >沟通方式</a>
+        <a class:list={['a-link',{active:message == 'product'}]} id='product' href="/product">案例展示</a>
+        <a class:list={['a-link',{active:message == 'price'}]} id='price' href="/price">价目表</a>
+    </div>
+
+
+<script lang="ts">
+
+    
+    
+
+</script>
+
+<style type="text/css" lang="scss" scoped>
+
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 16px;
+        width: 40vw;
+        margin-top: 10vh;
+        margin-left: 30vw;
+        background-color: aqua;
+        border-radius: 12px;
+    }
+
+    .nav-links a {
+        color: #131212;
+        text-decoration: none;
+        font-size: 38px;
+        background-color: rgb(233, 241, 241);
+        border-radius: 12px;
+
+    }
+    .nav-links a:hover{
+        color: #f3eaea;
+        text-decoration: none;
+        font-size: 38px;
+        background-color: rgb(103, 8, 47);
+
+    }
+    .nav-links .active{
+        color: #f3eaea;
+        text-decoration: none;
+        font-size: 38px;
+        background-color: rgb(103, 8, 47);
+    }
+</style>

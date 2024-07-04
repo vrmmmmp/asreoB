@@ -1,0 +1,76 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<Layout title='price'>
+    <main>
+        <!-- 海报设计：15r/张
+            logo设计：35-80r/款
+            周边设计：30-50r/款
+            UI设计：30r/张
+            题字：4r/字
+            刷库限时25r直入！
+            ……
+            更多设计请直接联系我们！
+            沟通——达成合作——付款——交付 -->
+        <div class="info-box">
+            <div class="info">
+                <div><h1>海报设计15r/张</h1></div>
+                <div><h1>logo设计35-80r/款</h1></div>
+                <div><h1>周边设计30-50r/款</h1></div>
+                <div><h1>UI设计30r/张</h1></div>
+                <div><h1>题字4r/字</h1></div>
+                <div><h1>刷库限时25r直入！</h1></div>
+                <div><h1>……</h1></div>
+                <div><h1>沟通——达成合作——付款——交付</h1></div>
+                <div style="display:flex;align-items:center;justify-content:space-between">
+                    <img src="/qrcode1.png" class="image"/>
+                    <img src="/qrcode2.png" class="image"/>
+                </div>
+                <div><h1>良心小铺，静待光顾！</h1></div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style lang="scss">
+    main {
+		margin-left:35vw;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: rgb(25, 23, 23);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+    h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+    .info-box{
+        background:linear-gradient(#654ea3,#eaafc8);
+        width: 31vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        border-radius: 20px;
+    }
+    .info{
+        background-color: rgb(238, 236, 236);
+        border: 1px solid black;
+        padding: 1rem;
+        border-radius: 20px;
+        width: 28vw;
+        
+    }
+    .image{
+                width: 10vw;
+                margin: 20px;
+            }
+</style>
